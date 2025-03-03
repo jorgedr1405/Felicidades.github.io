@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz cumpleaños bonita ❤️</title>
+    <style>
+        /* Fondo del atardecer */
+        body {
+            
+            background: linear-gradient(to top,#ccffff,#99ff,#00ffff);
+            
+        }
+
+        
+
+        /* Contenedor de las nubes */
+        .nube {
+            position: absolute;
+            width: 200px;
+            height: 80px;
+            background: #ffffff;
+            border-radius: 50%;
+            box-shadow: 40px 10px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0.8;
+        }
+
+        /* Añadir formas adicionales a las nubes */
+        .nube::before,
+        .nube::after {
+            content: '';
+            position: absolute;
+            background:linear-gradient(to top, #66ccff,#ffffff);
+            border-radius: 80%;
+        }
+
+        .nube::before {
+            width: 100px;
+            height: 80px;
+            top: -10px;
+            left: 20px;
+        }
+
+        .nube::after {
+            width: 120px;
+            height: 90px;
+            top: -40px;
+            right: 20px;
+        }
+
+        /* Animación de movimiento de las nubes */
+        @keyframes moverNube {
+            from {
+                transform: translateX(-400px);
+            }
+            to {
+                transform: translateX(100vw);
+            }
+        }
+
+        /* Varias nubes en distintas posiciones y velocidades */
+        .nube-1 { top: 20%; animation: moverNube 20s linear infinite; }
+        .nube-2 { top: 40%; animation: moverNube 25s linear infinite 5s; }
+        .nube-3 { top: 60%; animation: moverNube 30s linear infinite 10s; }
+        .nube-4 { top: 80%; animation: moverNube 35s linear infinite 15s; }
+
+	 /* Tarjeta de texto */
+        .tarjeta {
+            width: 350px;
+            padding: 10px;
+            background: linear-gradient(to top, #ff0099, #ff00ff);
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            z-index: 50;
+        }
+
+        .titulo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .contenido {
+            font-size: 16px;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+	/*imagen con marco*/
+	
+	.imagen-con-marco{
+	border: 5px solid #ffffff;
+	padding: 7px;
+	width: 20px;
+	}        
+    </style>
+</head>
+<body>
+
+    <!-- Nubes animadas -->
+    <div class="nube nube-1"></div>
+    <div class="nube nube-2"></div>
+    <div class="nube nube-3"></div>
+    <div class="nube nube-4"></div>
+<h1 align="center">_-_-__-_-_Feliz cumpleaños ❤️❤️❤️_-_-__-_-_</h1> 
+	<div style="display: flex; justify-content: space-between; align-items: center;">
+    |──❤️──|──❤️──<img src="1.jpg" style="width: 250px;" class="imagen-con-marco">❤️──|──❤️──|──❤️──|──❤️❤️──|──❤️──|──❤️──|──❤️──|──❤️
+    <img src="2.jpeg" style="width: 200px;" class="imagen-con-marco">──❤️──|──❤️──|
+</div>
+
+<!-- Tarjeta de texto -->
+
+<div align="center"> 
+<div class="tarjeta">
+        <div class="titulo">_-_-_❤️ Feliz cumpleaños ❤️_-_-_</div>
+        <div class="contenido">Hola niña bonita. Hoy es un dia muy especial porque 
+<br> es tu cumpleaños. Quiero que sepas que eres una niña increiblemente <br> inteligente,
+cariñoasa y valiente: Que tu dia este lleno de risas, amor y felicidad. <br> Te amo cami ❤️ </H3>
+        </div>
+<a href="flores.html">
+<p align="center"><img src="no.jpeg" width="150" height="150"></p>
+</a>
+    </div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center;">
+|──❤️──|──❤️──<img src="3.jpeg" style="width: 250px;" class="imagen-con-marco">❤️──|──❤️──|──❤️──|──❤️❤️──|──❤️──|──❤️──|──❤️──|──❤️
+
+    <img src="4.jpeg" style="width: 300px;" class="imagen-con-marco">──❤️──|──❤️──|
+	 
+</body>
+</html>

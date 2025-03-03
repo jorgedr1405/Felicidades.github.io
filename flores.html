@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eres necia pero bonita</title>
+    <style>
+        body {
+            
+            background: linear-gradient(to bottom, #1a1a1a, #333);
+            
+        }
+
+        .flower-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flower {
+            position: relative;
+            width: 70px;
+            height: 170px;
+        }
+
+        .petal {
+            width: 70px;
+            height: 100px;
+            background: radial-gradient(circle, #ff1493, #ff007f);
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+            transform-origin: 50% 100px; /* Corrige la rotación */
+        }
+
+        /* Pétalos bien distribuidos en círculo */
+        .petal:nth-child(1) { transform: rotate(0deg) translateY(-40px); }
+        .petal:nth-child(2) { transform: rotate(45deg) translateY(-40px); }
+        .petal:nth-child(3) { transform: rotate(85deg) translateY(-40px); }
+        .petal:nth-child(4) { transform: rotate(125deg) translateY(-40px); }
+        .petal:nth-child(5) { transform: rotate(155deg) translateY(-40px); }
+        .petal:nth-child(6) { transform: rotate(205deg) translateY(-40px); }
+        .petal:nth-child(7) { transform: rotate(240deg) translateY(-40px); }
+        .petal:nth-child(8) { transform: rotate(285deg) translateY(-40px); }
+        .petal:nth-child(9) { transform: rotate(320deg) translateY(-40px); } 
+
+        .center {
+            width: 70px;
+            height: 70px;
+            background: radial-gradient(circle, yellow, orange);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.7);
+        }
+/*tallo*/
+        .stem {
+            width: 15px;
+            height: 155px;
+            background: linear-gradient(to bottom, #228B22, #006400);
+            border-radius: 10px;
+            position: relative;
+        }
+/*hojas*/
+        .leaf {
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	            background: linear-gradient(to right, #32CD32, #228B22);
+            border-radius: 50%;
+            top: 40px;
+            left: -30px;
+            transform: rotate(-20deg);
+        }
+
+        .leaf.right {
+            left: auto;
+            right: -30px;
+            transform: rotate(20deg);
+        }
+    </style>
+</head>
+<body><br><br><br><br><br><br>
+        <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+        <div class="stem">
+            <div class="leaf"></div>
+            <div class="leaf right"></div>
+        </div>
+    </div>
+
+<h2 align="center" ><br>Eres lo mas bonito de el dia de hoy y de todos los dias<br>
+Tus bonitos ojos y tu linda sonrisa vino a cambiar esta vida.</h2>
+<h1 align="center" >Toma para ti mi niña necia! ❤️</h1>
+</body>
+</html>
