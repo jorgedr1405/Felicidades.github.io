@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eres necia pero bonita</title>
+    <style>
+	 body {
+            
+            background: linear-gradient(to bottom, #1a1a1a, #333);
+            
+        }
+
+        .flower-container {
+            
+        }
+
+        .flower {
+            position: relative;
+            width: 70px;
+            height: 170px;
+        }
+
+	.petal0 {
+	    top: 44%;
+            left: 46%;
+            width: 100px;
+            height: 150px;
+            background: radial-gradient(circle, #ff3300, #ff99cc);
+            position: absolute;
+            border-radius: 150%;
+            box-shadow: 6px 16px 40px rgba(20, 20, 20, 20.4);
+            transform-origin: 50% 100px; /* Corrige la rotación */
+        
+	}
+
+	.petal {
+            width: 70px;
+            height: 150px;
+            background: radial-gradient(circle, #ff1493, #ff007f);
+            position: absolute;
+            border-radius: 150%;
+            box-shadow: 3px 8px 20px rgba(10, 10, 10, 10.4);
+            transform-origin: 50% 100px; /* Corrige la rotación */
+        
+	}
+
+        .petal2 {
+            width: 55px;
+            height: 100px;
+	    top: 62%;
+            left: 61%;
+            background: radial-gradient(circle, #ff1493, #ff007f);
+            position: absolute;
+            border-radius: 150%;
+            box-shadow: 3px 8px 20px rgba(10, 10, 10, 10.4);
+            transform-origin: 50% 100px; /* Corrige la rotación */
+        
+	}
+
+	.petal02 {
+	    top: 62%;
+            left: 61%;
+            width: 70px;
+            height: 150px;
+            background: radial-gradient(circle, #ff3300, #ff99cc);
+            position: absolute;
+            border-radius: 150%;
+            box-shadow: 3px 8px 20px rgba(10, 10, 10, 10.4);
+            transform-origin: 50% 100px; /* Corrige la rotación */
+        
+	}
+	
+	.petal3 {
+            width: 55px;
+            height: 100px;
+	    top: -32%;
+            left: -203%;
+            background: radial-gradient(circle, #ff1493, #ff007f);
+            position: absolute;
+            border-radius: 150%;
+            box-shadow: 3px 8px 20px rgba(10, 10, 10, 10.4);
+            transform-origin: 50% 100px; /* Corrige la rotación */
+        
+	}
+
+	.petal03 {
+            width: 70px;
+            height: 150px;
+	    top: 60%;
+            left: 35%;
+            background: radial-gradient(circle, #ff3300, #ff99cc);
+            position: absolute;
+            border-radius: 150%;
+            box-shadow: 3px 8px 20px rgba(10, 10, 10, 10.4);
+            transform-origin: 50% 100px; /* Corrige la rotación */
+        
+	}
+
+        /* Pétalos bien distribuidos en círculo */
+	
+	.petal3:nth-child(1) { transform: rotate(0deg)   translateY(110px); }
+        .petal3:nth-child(2) { transform: rotate(45deg)  translateY(110px); }
+        .petal3:nth-child(3) { transform: rotate(90deg)  translateY(110px); }
+        .petal3:nth-child(4) { transform: rotate(135deg) translateY(110px); }
+        .petal3:nth-child(5) { transform: rotate(180deg) translateY(110px); }
+        .petal3:nth-child(6) { transform: rotate(225deg) translateY(110px); }
+        .petal3:nth-child(7) { transform: rotate(270deg) translateY(110px); }
+        .petal3:nth-child(8) { transform: rotate(315deg) translateY(110px); }
+        .petal3:nth-child(9) { transform: rotate(360deg) translateY(110px); }
+	
+	.petal2:nth-child(1) { transform: rotate(0deg)   translateY(110px); }
+        .petal2:nth-child(2) { transform: rotate(45deg)  translateY(110px); }
+        .petal2:nth-child(3) { transform: rotate(90deg)  translateY(110px); }
+        .petal2:nth-child(4) { transform: rotate(135deg) translateY(110px); }
+        .petal2:nth-child(5) { transform: rotate(180deg) translateY(110px); }
+        .petal2:nth-child(6) { transform: rotate(225deg) translateY(110px); }
+        .petal2:nth-child(7) { transform: rotate(270deg) translateY(110px); }
+        .petal2:nth-child(8) { transform: rotate(315deg) translateY(110px); }
+        .petal2:nth-child(9) { transform: rotate(360deg) translateY(110px); }
+	
+        .petal:nth-child(1) { transform: rotate(0deg) translateY(-40px); }
+        .petal:nth-child(2) { transform: rotate(45deg) translateY(-40px); }
+        .petal:nth-child(3) { transform: rotate(85deg) translateY(-40px); }
+        .petal:nth-child(4) { transform: rotate(125deg) translateY(-40px); }
+        .petal:nth-child(5) { transform: rotate(155deg) translateY(-40px); }
+        .petal:nth-child(6) { transform: rotate(205deg) translateY(-40px); }
+        .petal:nth-child(7) { transform: rotate(240deg) translateY(-40px); }
+        .petal:nth-child(8) { transform: rotate(285deg) translateY(-40px); }
+        .petal:nth-child(9) { transform: rotate(320deg) translateY(-40px); } 
+
+	.petal0:nth-child(1) { transform: rotate(0deg) translateY(-70px); }
+        .petal0:nth-child(2) { transform: rotate(45deg) translateY(-70px); }
+        .petal0:nth-child(3) { transform: rotate(85deg) translateY(-70px); }
+        .petal0:nth-child(4) { transform: rotate(125deg) translateY(-70px); }
+        .petal0:nth-child(5) { transform: rotate(155deg) translateY(-70px); }
+        .petal0:nth-child(6) { transform: rotate(205deg) translateY(-70px); }
+        .petal0:nth-child(7) { transform: rotate(240deg) translateY(-70px); }
+        .petal0:nth-child(8) { transform: rotate(285deg) translateY(-70px); }
+        .petal0:nth-child(9) { transform: rotate(320deg) translateY(-70px); }
+
+	.petal02:nth-child(1) { transform: rotate(0deg) translateY(-40px); }
+        .petal02:nth-child(2) { transform: rotate(45deg) translateY(-40px); }
+        .petal02:nth-child(3) { transform: rotate(85deg) translateY(-40px); }
+        .petal02:nth-child(4) { transform: rotate(125deg) translateY(-40px); }
+        .petal02:nth-child(5) { transform: rotate(155deg) translateY(-40px); }
+        .petal02:nth-child(6) { transform: rotate(205deg) translateY(-40px); }
+        .petal02:nth-child(7) { transform: rotate(240deg) translateY(-40px); }
+        .petal02:nth-child(8) { transform: rotate(285deg) translateY(-40px); }
+        .petal02:nth-child(9) { transform: rotate(320deg) translateY(-40px); }  	
+
+	.petal03:nth-child(1) { transform: rotate(0deg) translateY(-40px); }
+        .petal03:nth-child(2) { transform: rotate(45deg) translateY(-40px); }
+        .petal03:nth-child(3) { transform: rotate(85deg) translateY(-40px); }
+        .petal03:nth-child(4) { transform: rotate(125deg) translateY(-40px); }
+        .petal03:nth-child(5) { transform: rotate(155deg) translateY(-40px); }
+        .petal03:nth-child(6) { transform: rotate(205deg) translateY(-40px); }
+        .petal03:nth-child(7) { transform: rotate(240deg) translateY(-40px); }
+        .petal03:nth-child(8) { transform: rotate(285deg) translateY(-40px); }
+        .petal03:nth-child(9) { transform: rotate(320deg) translateY(-40px); } 
+	
+	.center0 {
+            width: 75px;
+            height: 75px;
+            background: radial-gradient(circle, yellow, orange);
+            border-radius: 350%;
+            position: absolute;
+            top: 101%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            box-shadow: 10px 10px 55px rgba(255, 255, 255, 10.7);
+        }
+
+        .center {
+            width: 75px;
+            height: 75px;
+            background: radial-gradient(circle, yellow, orange);
+            border-radius: 350%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -30%);
+            box-shadow: 10px 10px 55px rgba(255, 255, 255, 10.7);
+        }
+	.center2 {
+            width: 70px;
+            height: 70px;
+            background: radial-gradient(circle, yellow, orange);
+            border-radius: 350%;
+            position: absolute;
+            top: 77%;
+            left: 63%;
+            transform: translate(-50%, -50%);
+            box-shadow: 10px 10px 55px rgba(255, 255, 255, 10.7);
+        }
+	
+	.center3 {
+            width: 70px;
+            height: 70px;
+            background: radial-gradient(circle, yellow, orange);
+            border-radius: 350%;
+            position: absolute;
+            top: 31%;
+            left: -172%;
+            transform: translate(-50%, -50%);
+            box-shadow: 10px 10px 55px rgba(255, 255, 255, 10.7);
+        }
+/*tallo*/
+        .stem {
+            width: 20px;
+            height: 250px;
+            background: linear-gradient(to bottom, #228B22, #006400);
+            border-radius: 0px;
+            position: relative;
+	    transform: rotate(0deg);
+	    top: -150px;
+            left: 0px;
+        }
+	.stem2 {
+            width: 17px;
+            height: 195px;
+            background: linear-gradient(to bottom, #228B22, #006400);
+            border-radius: 10px;
+            position: relative;
+	    transform: rotate(47deg);
+	    top: -331px;
+            left: 63px;
+	}
+	.stem3 {
+            width: 17px;
+            height: 195px;
+            background: linear-gradient(to bottom, #228B22, #006400);
+            border-radius: 10px;
+            position: relative;
+	    transform: rotate(-45deg);
+	    top: -531px;
+            left: -62px;
+	}
+/*hojas*/
+        .leaf {
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	    background: linear-gradient(to right, #32CD32, #228B22);
+            border-radius: 50%;
+            top: 40px;
+            left: -30px;
+            transform: rotate(-20deg);
+        }
+
+        .leaf.right {
+            left: auto;
+            right: -30px;
+            transform: rotate(20deg);
+        }
+    </style>
+</head>
+<body><br><br><br>
+<div align="center" width="150" height="150">
+
+<span style="color: white; font-style: italic; font-weight: bold;"><h1>Toma para ti mi niña necia! ❤️</h1>
+<h2 align="center" >Eres lo mas bonito de el dia de hoy y de todos los dias<br>
+Tus bonitos ojos y tu linda sonrisa vino a cambiar esta vida.</h2>
+</span>
+
+<br><br><br><br>
+        <div class="flower-container0">
+        <div class="flower0">
+            <div class="petal0"></div>
+            <div class="petal0"></div>
+            <div class="petal0"></div>
+            <div class="petal0"></div>
+            <div class="petal0"></div>
+            <div class="petal0"></div>
+            <div class="petal0"></div>
+            <div class="petal0"></div>
+            <div class="petal0"></div>
+            
+        </div>
+
+	<div class="flower-container0">
+        <div class="flower0">
+            <div class="petal02"></div>
+            <div class="petal02"></div>
+            <div class="petal02"></div>
+            <div class="petal02"></div>
+            <div class="petal02"></div>
+            <div class="petal02"></div>
+            <div class="petal02"></div>
+            <div class="petal02"></div>
+            <div class="petal02"></div>
+            
+        </div>
+
+	<div class="flower-container0">
+        <div class="flower0">
+            <div class="petal03"></div>
+            <div class="petal03"></div>
+            <div class="petal03"></div>
+            <div class="petal03"></div>
+            <div class="petal03"></div>
+            <div class="petal03"></div>
+            <div class="petal03"></div>
+            <div class="petal03"></div>
+            <div class="petal03"></div>
+            
+        </div>
+
+        <div class="flower-container">
+        <div class="flower">
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="center"></div>
+        </div>
+	<div class="flower-container2">
+        <div class="flower2">
+            <div class="petal2"></div>
+            <div class="petal2"></div>
+            <div class="petal2"></div>
+            <div class="petal2"></div>
+            <div class="petal2"></div>
+            <div class="petal2"></div>
+            <div class="petal2"></div>
+            <div class="petal2"></div>
+            <div class="petal2"></div>
+            <div class="center2"></div>
+        </div>
+        <div class="flower-container">
+        <div class="flower">
+            <div class="petal3"></div>
+            <div class="petal3"></div>
+            <div class="petal3"></div>
+            <div class="petal3"></div>
+            <div class="petal3"></div>
+            <div class="petal3"></div>
+            <div class="petal3"></div>
+            <div class="petal3"></div>
+            <div class="petal3"></div>
+            <div class="center3"></div>
+        </div>
+	<div class="stem">
+            <div class="leaf"></div>
+            <div class="leaf right"></div>
+        </div>
+    </div>
+<div class="stem2">
+            <div class="leaf"></div>
+            <div class="leaf right"></div>
+        </div>
+	<div class="stem3">
+            <div class="leaf"></div>
+            <div class="leaf right"></div>
+        </div>
+</div>
+</body>
+</html>
